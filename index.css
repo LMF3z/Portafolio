@@ -1,0 +1,827 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  /* background: rgba(244,246,247,0.5); */
+  /*background-color: #eadbfc;*/
+  /*background: #b0d9f5;*/
+  background: #056cad;
+}
+
+.contieneBarra{
+  width: 100%;
+  height: 1%;
+  position: fixed;
+  box-sizing: border-box;
+}
+
+.barra{
+  width: 0%;
+  height: 100%;
+  background: #3498db;
+}
+
+.subir{
+  /* position: absolute; */
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  /*background: #3498db;*/
+  background: rgba(52,152,219, 0.3);
+  /* font-size: 18px; */
+  /* color: white; */
+  text-align: center;
+  padding-top: 7px;
+  cursor: pointer;
+  right: 2.5%;
+  bottom: 5%;
+  display: none;
+}
+
+.subir > img{
+  width: 30px;
+  height: 30px;
+}
+
+@font-face {
+  font-family: 'Esta';
+  src: url("fuentes/SUNRISE MINIMALIST.otf");
+}
+
+@font-face {
+  font-family: 'EstaDos';
+  src: url("fuentes/SIMPLIFICA Typeface.ttf");
+}
+
+.contieneSidebar{
+  background: #fcfcfe;
+  width: 25%;
+  height: 100vh;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px; 
+  box-sizing: border-box;
+  float: left;
+}
+
+.foto{
+  width: 120px;
+  height: 120px;
+  background-image: url("imagenes/moises.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  border-radius: 10rem;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.contiene-titulo{
+  width: 100%;
+  font-family: 'Esta';
+  font-size: 23px;
+  text-align: center;
+  margin-top: 3%;
+  color: #3498db;
+}
+
+.contiene-opciones{
+  margin-top: 1%;
+}
+
+.contiene-opciones ul {
+  list-style: none;
+  /*border: 1px solid red;*/
+}
+
+.contiene-opciones ul li{
+  padding: 1% 10%;
+}
+
+.contiene-opciones ul li:hover{
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  background:rgba(0,0,0,0.8);
+}
+
+.contiene-opciones ul a:hover > li{
+  color: #3498db;
+  text-decoration: underline grey;
+  font-style: italic;
+  transition: 0.5s;
+}
+
+.contiene-opciones ul a li{
+  font-family: 'Esta';
+  font-size: 33px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 6% 10%;
+  color: black;
+}
+
+/* ------ Cuerpo ------------- */
+
+
+.contiene-foto{
+  width: 75%;
+  height: 100vh;
+  float: left;
+  margin: auto;
+  background-image: url('imagenes/escritorio_developer.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.nombre{
+  width: 100%;
+  height: 100vh;
+  background:rgba(0,0,0,0.8);
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding-top: 25%;
+  padding-left: 10%;
+  /*margin-top: 35vh;*/
+}
+
+.nombre > h2{
+  font-family: 'EstaDos';
+  font-size: 80px;
+}
+
+.nombre > h1{
+  font-family: 'EstaDos';
+  font-size: 80px;
+}
+
+.detalle{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.detalle > h2{
+  color: #3498db;
+  font-family: 'EstaDos';
+  font-size: 50px;
+}
+
+/* seccion de la descripcion */
+
+.contiene-descripcion{
+  width: 100%;
+  text-align: center;
+  float: left;
+  padding-top: 5%;
+}
+
+/* Caja Uno */
+
+.about-me{
+  width: 95%;
+  height: auto;
+  border-radius: 10px;
+  margin: auto;
+  /*border: solid 2px blue;*/
+  box-shadow: 0 2px 0 2px rgba(0,0,0,0.6);
+  padding: 3% 0 3% 0;
+  display: flex;
+  /*background:rgba(0,0,0,0.1);*/
+  box-sizing: border-box;
+  margin-bottom: 3%;
+  background: #fcfcfe;
+  text-align: center;
+}
+
+.imgAboutMe{
+  width: 25%;
+  height: 50px;
+  border: solid 2px pink;
+}
+
+.aboutMe-des{
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+
+.aboutMe-des > h1{
+  margin-top: 3%;
+  margin-bottom: 6%;
+  font-family: "EstaDos";
+  font-size: 45px;
+  font-weight: bold;
+  color: #3498db;
+  text-decoration: underline;
+}
+
+.aboutMe-des > p{
+  margin-left: 5%;
+  font-family: "EstaDos";
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+/* Caja uno video uno */
+
+.contiene_miniaturas{
+  width: 100%;
+  height: auto;
+  /* border: solid 1px red; */
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  box-sizing: border-box;
+  /* border-left: solid 2px rgba(0,0,0,0.6);
+  border-right: solid 2px rgba(0,0,0,0.6); */
+}
+
+.miniatura{
+  width: 150px;
+  height: 100%;
+  cursor: pointer;
+  margin-left: 2%;
+  border-radius: 10px;
+  /*box-sizing: border-box;*/
+   /*box-sizing: content-box; */
+  /* border: solid 1px blue; */
+}
+
+.title_imgP{
+  font-family: 'EstaDos';
+  margin-bottom: 5px;
+}
+
+.img_Pro{
+  position: relative;
+  width: 150px;
+  height: 120px;
+}
+
+.img_Pro:hover{
+  position: relative;
+  width: 160px;
+  height: 130px;
+}
+
+.img_Pro > img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  /* width: 150px;
+  height: 120px; */
+}
+
+@media all and (max-width: 600px) {
+
+  /* SUBIR */
+  .subir{
+    width: 25px;
+    height: 25px;
+    padding-top: 0;
+  }
+
+  .subir > img{
+    width: 15px;
+    height: 15px;
+  }
+  /* SUBIR */
+
+  .contieneSidebar{
+    height: 40vh;
+  }
+
+  .foto{
+    width: 70px;
+    height: 70px;
+  }
+
+  .contiene-titulo{
+    font-size: 12px;
+  }
+
+  .contiene-foto{
+    height: 40vh;
+  }
+
+  .contiene-opciones ul a li{
+    font-size: 15px;
+  }
+
+  /* ------ Cuerpo ------------- */
+
+  .nombre{
+    height: 40vh;
+    padding-top: 32%;
+  }
+
+  .nombre > h2{
+    font-size: 25px;
+  }
+
+  .nombre > h1{
+    font-size: 30px;
+  }
+
+  .detalle > h2{
+    font-size: 25px;
+  }
+
+  /* Cuerpo */
+
+  .aboutMe-des img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .aboutMe-des > h1{
+    font-size: 25px;
+  }
+
+  .aboutMe-des > p{
+    font-size: 15px;
+  }
+
+/* **************/
+
+  .contieneBarra{
+  height: 0.5%;
+  }
+
+/* *************** */
+
+  .contiene_miniaturas{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .miniatura{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    /*display: grid;*/
+  }
+
+  .img_Pro{
+    width: 100%;
+    height: 100%;
+  }
+
+  .img_Pro:hover{
+    width: 100px;
+    height: 70px;
+  }
+
+  .img_Pro img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+}
+
+/* IMAGENES */
+
+.contiene_iconos{
+  display: flex;
+  justify-content: space-around;
+}
+
+.caja{
+  /*border: solid 1px red;*/
+}
+
+.caja_titulo{
+  margin-bottom: 10px;
+  text-align: center;
+  /*border: solid 1px blue;*/
+}
+
+.caja_imagen{
+  margin: auto;
+}
+
+.caja_imagen img{
+  border-radius: 5px;
+  /*border: solid 1px olive;*/
+}
+
+@media all and (max-width: 600px){
+  .caja_titulo h3{
+    font-size: 15px;
+  }
+
+  .caja_imagen{
+     width: 50px;
+     height: 50px;
+  }
+}
+
+
+
+
+/* Video */
+
+.contiene_video_one{
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video{
+  width: 80%;
+  height: 70%;
+  background: #fff;
+  /* display: none; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: transform 1s;
+  transform: translateY(0%);
+  border-radius: 10px;
+  /* overflow: hidden; */
+}
+.video > video{
+  width: 95%;
+  height: 75%;
+}
+
+.modal_close{
+  transition: 1s;
+  transform: translateY(-200%);
+}
+
+.close{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #3498db;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+/* contiene la caja del formulario */
+
+.cont_caja_contact{
+  width: 95%;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 0 2px rgba(0,0,0,0.6);
+  padding: 3% 0 3% 0;
+  /*background:rgba(0,0,0,0.1);*/
+  box-sizing: border-box;
+  /*margin-bottom: 3%;*/
+  background: white;
+}
+
+/* caja del formulario */
+
+.caja_contact{
+  width: 95%;
+  margin: auto;
+  /*border: solid 2px olive;*/
+  text-align: center;
+}
+
+.enlace_repositorio > h1{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-family: "EstaDos";
+  font-size: 45px;
+  font-weight: bold;
+  color: #3498db;
+  text-decoration: underline;
+}
+.enlace_repositorio > p{
+  font-family: "EstaDos";
+  font-size: 45px;
+  font-weight: bolder;
+}
+
+.enlace_repositorio{
+  margin-bottom: 3%;
+}
+
+.caja_contact > p{
+  margin-left: 5%;
+  font-size: 20px;
+}
+
+.social{
+  margin-top: 3%;
+}
+.social a{
+  text-decoration: none;
+  /*color: #3498db;*/
+  font-family: "EstaDos";
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+@media all and (max-width: 600px){
+  .caja_contact img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .enlace_repositorio h1{
+    font-size: 25px;
+  }
+  .enlace_repositorio p{
+   font-size: 20px; 
+  }
+
+  .social img{
+    width: 13px;
+    height: 13px;
+  }
+  .social a{
+    font-size: 20px;
+  }
+}
+
+/* FORMULARIO DE CONTACTO */
+
+.cont_form_contact{
+  /*border: solid 1px red;*/
+  padding: 10px;
+}
+
+#form_contact{
+  border-top: solid 1px rgba(0,0,0,0.8);
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title_contact{
+  grid-column: 1 / -1;
+  text-decoration: underline #3498db;
+}
+
+#form_contact h1{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-family: "EstaDos";
+  font-size: 45px;
+  font-weight: bold;
+  color: #3498db;
+}
+
+.name_contac, .lastname_contac, .enterprise, .correo{
+  width: 100%;
+  font-family: "EstaDos";
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.name_contac input{
+  margin-top: 2%;
+  width: 100%;
+  height: 40px;
+  font-family: "EstaDos";
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 5px;
+  border: solid 1px rgba(0,0,0,0.8);
+}
+
+.name_contac input:focus, .lastname_contac input:focus, .enterprise input:focus,
+.correo input:focus, .mensaje textarea:focus{
+  border: solid 2px blue;
+}
+/* ****************** */
+
+.lastname_contac input{
+  margin-top: 2%;
+  width: 100%;
+  height: 40px;
+  font-family: "EstaDos";
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 5px;
+  border: solid 1px rgba(0,0,0,0.8);
+}
+
+/* /////////////////// */
+.enterprise{
+  margin-top: 3%;
+}
+
+.enterprise input{
+  margin-top: 2%;
+  width: 100%;
+  height: 40px;
+  font-family: "EstaDos";
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 5px;
+  border: solid 1px rgba(0,0,0,0.8);
+}
+
+/* ****************** */
+
+.correo{
+  margin-top: 3%;
+}
+
+.correo input{
+  margin-top: 2%;
+  width: 100%;
+  height: 40px;
+  font-family: "EstaDos";
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 5px;
+  border: solid 1px rgba(0,0,0,0.8);
+}
+
+/* ********** */
+
+.asunto{
+  margin-top: 3%;
+  grid-column: 1 / -1;
+}
+
+.asunto input{
+  margin-top: 2%;
+  width: 100%;
+  height: 40px;
+  font-family: "EstaDos";
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 5px;
+  border: solid 1px rgba(0,0,0,0.8);
+}
+
+/* ********** */
+
+.mensaje{
+  margin-top: 3%;
+  grid-column: 1 / -1;
+  font-family: "EstaDos";
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.mensaje textarea{
+  margin-top: 2%;
+  padding: 10px;
+  resize: none;
+  width: 100%;
+  height: 200px;
+  font-family: "EstaDos";
+  font-weight: bold;
+  font-size: 25px;
+  border: solid 1px rgba(0,0,0,0.8);
+  border-radius: 5px;
+  overflow-y: hidden;
+  overflow-x: visible;
+}
+
+/* ************ */
+
+.btn_send{
+  margin-top: 1%;
+  grid-column: 1 / -1;
+  color: white;
+}
+
+.btn_send input{
+  cursor: pointer;
+  margin-top: 2%;
+  width: 100%;
+  padding: 1%;
+  font-size: 28px;
+  color: #3498db;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.8);
+}
+
+@media all and (max-width: 600px) {
+  #form_contact h1{
+    font-size: 25px;
+  }
+
+  .name_contac, .lastname_contac, .enterprise, .correo{
+    font-size: 20px;
+  }
+
+  .name_contac input, .lastname_contac input, .enterprise input, .correo input, .asunto input{
+    height: 20px;
+    font-size: 20px;
+  }
+
+  .mensaje{
+    font-size: 25px;
+  }
+
+  .mensaje textarea{
+    font-size: 20px;
+    height: 100px;
+  }
+
+  .btn_send input{
+    font-size: 20px;
+  }
+}
+
+footer{
+  width: 100%;
+  height: 200px;
+  margin-top: 5%;
+  /*background: red;*/
+}
+
+footer .barra_up{
+  width: 100%;
+  height: 10%;
+  /*background:rgba(0,0,0,0.8);*/
+  background: #02305a;
+  /*background: #14214c;*/
+}
+
+footer .content_footer{
+  width: 100%;
+  margin: auto;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  /*border: solid 2px olive;*/
+  /*color: #3498db;*/
+  background: #fcfcfe;
+  text-align: center;
+}
+
+footer .content_footer h1 {
+  margin-top: 3%;
+  margin-bottom: 6%;
+  font-family: "EstaDos";
+  font-size: 45px;
+  font-weight: bold;
+  color: #3498db;
+
+  /*text-decoration: underline;*/
+}
+
+footer .content_footer p {
+  margin-left: 5%;
+  /*font-family: "EstaDos";*/
+  /*font-size: 25px;*/
+  font-weight: bolder;
+  /*color: #3498db;*/
+  color: #000;
+  font-family: 'EstaDos';
+  font-size: 50px;
+}
+
+@media all and (max-width: 600px){
+
+  footer .barra_up{
+    width: 100%;
+    height: 10%;
+    background: #02305a;
+  }
+
+  footer .content_footer img{
+    width: 50px;
+    height: 50px;
+  }
+
+  footer .content_footer h1 {
+    font-size: 25px;
+  }
+
+  footer .content_footer p {
+    font-size: 15px;
+  }
+
+  footer .content_footer span {
+    font-size: 15px;
+  }
+}
