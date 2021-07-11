@@ -1,5 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  // initials variables
+
+  const refActual_yeat = document.querySelector('#actual_year');
+
+  const date = new Date()
+  const actual_year = date.getFullYear()
+
+  refActual_yeat.innerHTML = actual_year;
+
   // VARIABLES DEL MODAL
   const contiene_miniaturas = document.querySelector('#contiene_miniaturas')
   const modal = document.querySelector('#contiene_video_one')
@@ -136,20 +145,6 @@ const enviarMensaje = async form =>{
   // enviar datos al archivo php que se encarga de enviar los corrreos
   document.querySelector('#form_contact').reset()
 
-  try {
-    const res = await fetch("http://localhost/proyectos/Portafolio/enviarEmail.php",{
-    method: "POST",
-    body: form
-    
-    })
-
-    const respuesta = await res.json()
-    console.log(respuesta)
-
-    alert('Mensaje Enviado Exitosamente')
-
-  } catch(e) {
-    console.log(e);
-  }
+  alert('At this time this form is maintenance. Please, if you want to contact me, go to the link to my curriculum vitae.');
 
 }
